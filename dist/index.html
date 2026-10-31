@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#4b0410" />
+  <meta name="description" content="Créez votre visuel Je serai là pour le Concert d'Évangélisation 2026 du Temple Elim." />
+  <title>Je serai là ! | Concert d'Évangélisation 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header container">
+    <div class="identity"><img src="assets/logo-jad.png" alt="Logo Assemblées de Dieu" /><div><strong>JAD LOCALE</strong><span>TEMPLE ELIM · SOMGANDÉ</span></div></div>
+    <a class="header-link" href="#informations">L'événement <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="container">
+    <section class="hero"><div class="eyebrow"><span class="eyebrow-dot"></span> CONCERT D'ÉVANGÉLISATION · 3ÈME ÉDITION</div>
+      <h1>Faites savoir que <em>vous serez là.</em></h1>
+      <p>Rejoignez le mouvement ! Ajoutez votre photo, créez votre affiche personnalisée et partagez-la avec vos proches.</p>
+    </section>
+    <section class="workspace" aria-label="Créateur d'affiche">
+      <div class="controls panel">
+        <div class="step"><span class="step-number">01</span><span>VOTRE PHOTO</span></div>
+        <label for="photoInput" id="uploadZone" class="upload-zone"><span class="upload-icon">↥</span><strong>Ajoutez votre photo</strong><span>Choisir une image depuis votre appareil</span><small>JPG, PNG ou WEBP · max. 15 Mo</small></label>
+        <input id="photoInput" type="file" accept="image/png,image/jpeg,image/webp" hidden />
+        <div class="photo-tools" id="photoTools" hidden>
+          <div class="tool-header"><label for="zoom">Zoom sur la photo</label><span id="zoomValue">100 %</span></div>
+          <input id="zoom" type="range" min="100" max="260" value="100" step="1" />
+          <p class="helper">Glissez votre photo sur l'affiche pour la repositionner.</p>
+          <button type="button" class="text-button" id="resetPhoto">Réinitialiser le cadrage</button>
+        </div>
+        <div class="thin-line"></div>
+        <div class="step"><span class="step-number">02</span><span>VOTRE MESSAGE</span></div>
+        <label class="field-label" for="participantName">Votre nom <span>(facultatif)</span></label>
+        <input id="participantName" type="text" placeholder="Ex. : Abraham Ouédraogo" maxlength="34" autocomplete="name" />
+        <p class="helper">Votre nom s'affichera au bas du visuel.</p>
+        <div class="thin-line"></div>
+        <div class="step"><span class="step-number">03</span><span>TÉLÉCHARGEZ</span></div>
+        <button class="download primary" id="downloadPng" type="button"><span>↓</span> Télécharger en PNG <small>Qualité maximale</small></button>
+        <button class="download secondary" id="downloadJpg" type="button"><span>↓</span> Télécharger en JPG</button>
+        <p class="privacy"><span aria-hidden="true">♧</span> Votre photo reste sur votre appareil. Aucun compte, aucun envoi sur un serveur.</p>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="preview-column"><div class="preview-top"><div><span class="preview-indicator"></span> APERÇU EN DIRECT</div><span>FORMAT 4:5</span></div>
+        <div class="preview-frame"><canvas id="poster" width="1080" height="1350" aria-label="Aperçu de votre affiche personnalisée">Votre navigateur ne prend pas en charge Canvas.</canvas></div>
+        <p class="preview-footnote">Votre création est exportée en haute résolution (1080 × 1350 px), idéale pour WhatsApp, Facebook et Instagram.</p>
+      </div>
+    </section>
+    <section class="event-details" id="informations"><div><span class="eyebrow">RENDEZ-VOUS</span><h2>Une rencontre qui change <em>l'histoire d'une vie.</em></h2><p>Jean 4:5-30 · Un événement organisé par la JAD locale Temple Elim.</p></div><div class="details-grid"><div><span>DATE</span><strong>29 NOV. 2026</strong></div><div><span>LIEU</span><strong>Église Temple Elim</strong><small>Somgandé, entre le château d'eau et le CSPS</small></div><div><span>CONTACTS</span><strong>+226 74 06 04 09</strong><small>+226 73 74 02 00 · +226 65 10 01 83</small></div></div></section>
+  </main>
+  <footer class="container">JAD LOCALE TEMPLE ELIM <span>·</span> CONCERT D'ÉVANGÉLISATION 2026</footer>
+  <script src="app.js"></script>
+</body>
+</html>
