@@ -6,12 +6,15 @@
   <meta name="theme-color" content="#4b0410" />
   <meta name="description" content="Créez votre visuel Je serai là pour le Concert d'Évangélisation 2026 du Temple Elim." />
   <title>Je serai là ! | Concert d'Évangélisation 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@1,600&family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header container">
-    <div class="identity"><img src="assets/logo-jad.png" alt="Logo Assemblées de Dieu" /><div><strong>JAD LOCALE</strong><span>TEMPLE ELIM · SOMGANDÉ</span></div></div>
+    <div class="identity"><img src="assets/logo-jad-240.png" alt="Logo Assemblées de Dieu" width="56" height="55" /><div><strong>JAD LOCALE</strong><span>TEMPLE ELIM · SOMGANDÉ</span></div></div>
     <a class="header-link" href="#informations">L'événement <span aria-hidden="true">↗</span></a>
   </header>
   <main class="container">
@@ -27,7 +30,7 @@
         <div class="photo-tools" id="photoTools" hidden>
           <div class="tool-header"><label for="zoom">Zoom sur la photo</label><span id="zoomValue">100 %</span></div>
           <input id="zoom" type="range" min="100" max="260" value="100" step="1" />
-          <p class="helper">Glissez votre photo sur l'affiche pour la repositionner.</p>
+          <p class="helper">Glissez votre photo sur l'affiche pour la repositionner (pincez avec deux doigts pour zoomer).</p>
           <button type="button" class="text-button" id="resetPhoto">Réinitialiser le cadrage</button>
         </div>
         <div class="thin-line"></div>
@@ -43,7 +46,7 @@
         <p id="status" class="status" role="status" aria-live="polite"></p>
       </div>
       <div class="preview-column"><div class="preview-top"><div><span class="preview-indicator"></span> APERÇU EN DIRECT</div><span>FORMAT 4:5</span></div>
-        <div class="preview-frame"><canvas id="poster" width="1080" height="1350" aria-label="Aperçu de votre affiche personnalisée">Votre navigateur ne prend pas en charge Canvas.</canvas></div>
+        <div class="preview-frame"><canvas id="poster" width="1080" height="1350" aria-label="Aperçu de votre affiche personnalisée">Votre navigateur ne prend pas en charge Canvas.</canvas><div class="photo-handle" id="photoHandle" hidden aria-hidden="true"></div></div>
         <p class="preview-footnote">Votre création est exportée en haute résolution (1080 × 1350 px), idéale pour WhatsApp, Facebook et Instagram.</p>
       </div>
     </section>
